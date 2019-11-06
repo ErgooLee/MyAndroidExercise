@@ -1,0 +1,6 @@
+include ':bindingAnnotation'
+include ':bindingProcessor'
+include ':binding'
+include ':binding-reflection'
+include ':app'
+rootProject.name='Test'

@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+
+        <item name="attr1">theme item</item>
+        <item name="attr2">theme item</item>
+        <item name="attr3">theme item</item>
+        <item name="attr4">theme item</item>
+        <item name="attr5">theme item</item>
+
+<!--        <item name="ZTextViewStyle">@style/ZTextStyleTheme</item>-->
+
+    </style>
+
+    <style name="dialog" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="ZTextStyleXML">
+        <item name="attr1">style xml</item>
+        <item name="attr2">style xml</item>
+    </style>
+
+    <style name="ZTextStyleTheme">
+        <item name="attr1">style theme</item>
+        <item name="attr2">style theme</item>
+        <item name="attr3">style theme</item>
+    </style>
+
+    <style name="ZTextStyleDef">
+        <item name="attr1">style def</item>
+        <item name="attr2">style def</item>
+        <item name="attr3">style def</item>
+        <item name="attr4">style def</item>
+    </style>
+
+
+
+</resources>

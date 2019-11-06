@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.test.event.EventLinear xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".event.testEvent">
+
+    <com.example.test.event.EventView
+        android:id="@+id/eventView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/holo_green_light"/>
+</com.example.test.event.EventLinear>

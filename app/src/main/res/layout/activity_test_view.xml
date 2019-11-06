@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".view.TestView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.example.test.view.ProgressImageView
+                android:id="@+id/progressImage"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/progress_bg"
+                android:src="@drawable/clip" />
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ad_tag_icon" />
+
+            <Button
+                android:id="@+id/changeColor"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="改变颜色" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.example.test.view.ZTextView
+                style="@style/ZTextStyleXML"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:attr1="xml" />
+
+            <com.example.test.view.CustomView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@color/colorAccent2" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.example.test.view.DashboardView
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+
+            <com.example.test.view.PieView
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.example.test.view.AvatarView
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+
+            <com.example.test.view.XfermodeView
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.example.test.view.SportView
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+
+            <com.example.test.view.CameraView
+                android:id="@+id/cameraView"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+        </LinearLayout>
+
+        <com.example.test.view.MultilineTextView
+            android:id="@+id/multiply"
+            android:layout_width="match_parent"
+            android:layout_height="290dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.example.test.view.CircleView
+                android:id="@+id/anim2"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <View
+                android:id="@+id/anim1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/colorAccent2" />
+
+            <com.example.test.view.PointView
+                android:id="@+id/pointView"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <com.example.test.view.ProvinceView
+                android:id="@+id/province"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:background="@color/colorPrimary" />
+
+        </LinearLayout>
+
+
+        <com.example.test.view.DrawableView
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent2"
+            android:hint="Username" />
+
+        <com.example.test.view.MaterialTextView
+            android:id="@+id/materialText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent3"
+            android:hint="Username"
+            app:useFloatingLabel="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.example.test.view.SquareImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bussiness_man_avatar" />
+
+            <com.example.test.view.CircleView
+                android:layout_width="200dp"
+                android:layout_height="150dp" />
+
+
+        </LinearLayout>
+
+        <com.example.test.view.TagLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.example.test.view.ColorTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.example.test.view.ColorTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.example.test.view.ColorTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.example.test.view.ColorTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.example.test.view.ColorTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.example.test.view.ColorTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.example.test.view.ColorTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.example.test.view.ColorTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.example.test.view.ColorTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.example.test.view.ColorTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </com.example.test.view.TagLayout>
+    </LinearLayout>
+
+
+</ScrollView>
