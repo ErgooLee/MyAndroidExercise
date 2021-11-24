@@ -10,9 +10,16 @@
     tools:context=".view.TestView">
 
     <com.example.test.view.ProgressView
-        android:id="@+id/ttttt"
+        android:id="@+id/myProgress"
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_margin="5dp" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:text="btn"/>
 
 </LinearLayout>

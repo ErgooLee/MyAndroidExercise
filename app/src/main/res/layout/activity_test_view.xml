@@ -37,6 +37,12 @@
                 android:layout_height="40dp"
                 android:text="改变颜色" />
 
+            <com.example.test.view.LifeView
+                android:id="@+id/click_dlg"
+                android:layout_width="60dp"
+                android:layout_height="36dp"
+                android:background="@color/colorAccent"/>
+
         </LinearLayout>
 
 
@@ -174,6 +180,10 @@
 
 
         </LinearLayout>
+
+        <com.example.test.view.PathTest
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
 
         <com.example.test.view.TagLayout
             android:layout_width="match_parent"

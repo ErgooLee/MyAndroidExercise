@@ -16,7 +16,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".theme.TestTheme"></activity>
+        <activity android:name=".life.TestLife" />
+        <activity android:name=".file.TestFile" />
+        <activity
+            android:name=".DialogActivity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name=".theme.TestTheme" />
         <activity android:name=".view.TestView2" />
         <activity android:name=".annotation.TestAnnotation" />
         <activity android:name=".event.testEvent" />
@@ -32,7 +37,9 @@
         <activity android:name=".view.TestView" />
         <activity android:name=".window.TestWindow" />
         <activity android:name=".pattern.mvp.SampleActivity" />
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -49,6 +56,21 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths" />
         </provider>
+
+        <activity
+            android:name=".deeplink.DeepLinkResolveActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="ergoo"
+                    android:scheme="test_deep" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

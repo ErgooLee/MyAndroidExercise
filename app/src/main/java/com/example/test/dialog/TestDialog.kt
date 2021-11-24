@@ -2,6 +2,7 @@ package com.example.test.dialog
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.example.test.R
@@ -36,5 +37,30 @@ class TestDialog : AppCompatActivity() {
             }.show()
         }
 
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d("chao", "dialog pause")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Log.d("chao", "dialog onStop")
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.d("chao", "dialog onStart")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Log.d("chao", "dialog onRestart")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Log.d("chao", "dialog onResume")
     }
 }

@@ -3,6 +3,8 @@ package com.example.test.window
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.view.View
+import android.view.WindowManager
 import android.webkit.WebView
 import com.example.test.R
 import kotlinx.android.synthetic.main.activity_window.*
@@ -12,10 +14,10 @@ class TestWindow : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //test0 home 可保持
-//        window.setFlags(
-//            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+        window.addFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
 //            WindowManager.LayoutParams.FLAG_FULLSCREEN
-//        )
+        )
         setContentView(R.layout.activity_window)
 
 
@@ -26,8 +28,8 @@ class TestWindow : AppCompatActivity() {
 //        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
         //test3 home 返回不可保持，点击界面元素退出全屏，
-//        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN or
-//                View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN or
+                View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
 
 //        //test4 home 返回不可保持，点击界面元素退出全屏，
 //        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN or

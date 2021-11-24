@@ -3,6 +3,7 @@ package com.example.test.view
 import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
+import android.util.Log
 import android.view.View
 import com.example.test.R
 import com.example.test.utils.dp
@@ -23,7 +24,7 @@ class AvatarView(context: Context, attributeSet: AttributeSet) : View(context, a
     }
 
     override fun onDraw(canvas: Canvas) {
-        super.onDraw(canvas)
+//        super.onDraw(canvas)
         val count = canvas.saveLayer(rectF, null)
         //destination circle
         canvas.drawOval(rectF, paint)
@@ -45,4 +46,5 @@ class AvatarView(context: Context, attributeSet: AttributeSet) : View(context, a
         return BitmapFactory.decodeResource(resources, R.drawable.bussiness_man_avatar, options)
 
     }
+
 }

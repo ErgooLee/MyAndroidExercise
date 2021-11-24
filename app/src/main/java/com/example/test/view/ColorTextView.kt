@@ -10,7 +10,7 @@ import androidx.appcompat.widget.AppCompatTextView
 import com.example.test.utils.dp
 import java.util.*
 
-class ColorTextView(context: Context?, attrs: AttributeSet?) : AppCompatTextView(context, attrs) {
+class ColorTextView(context: Context, attrs: AttributeSet?) : AppCompatTextView(context, attrs) {
     private val colors =
         listOf(Color.BLACK, Color.CYAN, Color.BLUE, Color.YELLOW, Color.RED, Color.GRAY)
 
